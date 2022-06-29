@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+header {
+  width: 100vw; }
+  header .logo-header {
+    width: 4em; }
+
+footer {
+  width: 100vw;
+  height: 5vh; }
+  footer .footer {
+    border: 2px darkslategrey solid;
+    width: 98%;
+    height: 100%;
+    border-radius: 0.3em;
+    margin: auto;
+    margin-top: 2em; }
+    footer .footer div {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      footer .footer div a {
+        font-size: 2em;
+        text-decoration: none;
+        color: white;
+        text-align: center; }
+        footer .footer div a i:hover {
+          color: black;
+          font-size: 2.5; }
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: linear-gradient(to top, #0c3483 0%, #3f96b3 100%); }
+
+.carousel-index {
+  width: 100vw;
+  height: 83vh; }
+  .carousel-index h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0, 6em;
+    padding-top: 0.4em;
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: white; }
+  .carousel-index .title-border {
+    border-bottom: #bababa 1px solid;
+    width: 30%;
+    margin: auto; }
+  .carousel-index h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0, 3em;
+    padding-top: 0.3em;
+    font-size: 1.5em;
+    color: #dbdbdb;
+    letter-spacing: 1px; }
+  .carousel-index .carousel {
+    width: 98%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: auto; }
+    .carousel-index .carousel .carousel-modifier {
+      border-radius: 1em; }
+      .carousel-index .carousel .carousel-modifier img {
+        height: 68vh;
+        object-fit: cover; }
+
+.scroll-down-container {
+  background-color: #6b8cce;
+  border-radius: 1em;
+  width: 60vw;
+  padding: 1em;
+  margin: auto;
+  margin-top: 0.5em;
+  height: 5vh; }
+
+.index-info {
+  width: 100vw; }
+  .index-info .staff-bernabe {
+    width: 90%;
+    height: 45vh;
+    margin: auto;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    background-color: #cea053; }
+    .index-info .staff-bernabe h2 {
+      text-align: center;
+      margin: 0.5em; }
+    .index-info .staff-bernabe .photo-text-staff {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      height: 90%; }
+      .index-info .staff-bernabe .photo-text-staff img {
+        width: 50%;
+        height: 90%;
+        border-radius: 0.8em;
+        margin: 0.2em;
+        object-fit: cover; }
+      .index-info .staff-bernabe .photo-text-staff p {
+        width: 40%;
+        height: 100%;
+        font-size: 1.2em;
+        text-align: justify; }
+  .index-info .factory-bernabe {
+    width: 90%;
+    height: 45vh;
+    margin: auto;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    background-color: #cea053; }
+    .index-info .factory-bernabe h3 {
+      text-align: center;
+      margin: 0.5em; }
+    .index-info .factory-bernabe .photo-text-factory {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      height: 90%; }
+      .index-info .factory-bernabe .photo-text-factory img {
+        width: 50%;
+        height: 90%;
+        border-radius: 0.8em;
+        margin: 0.2em;
+        object-fit: cover; }
+      .index-info .factory-bernabe .photo-text-factory p {
+        width: 40%;
+        height: 100%;
+        font-size: 1.2em;
+        text-align: justify; }
+  .index-info .beertruck-bernabe {
+    width: 90%;
+    height: 45vh;
+    margin: auto;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    background-color: #cea053; }
+    .index-info .beertruck-bernabe h4 {
+      text-align: center;
+      margin: 0.5em; }
+    .index-info .beertruck-bernabe .photo-text-beertruck {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      height: 90%; }
+      .index-info .beertruck-bernabe .photo-text-beertruck img {
+        width: 50%;
+        height: 90%;
+        border-radius: 0.8em;
+        margin: 0.2em;
+        object-fit: cover; }
+      .index-info .beertruck-bernabe .photo-text-beertruck p {
+        width: 40%;
+        height: 100%;
+        font-size: 1.2em;
+        text-align: justify; }

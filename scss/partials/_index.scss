@@ -1,0 +1,178 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: linear-gradient(to top, #0c3483 0%, #3f96b3 100%);
+}
+
+.carousel-index {
+    width: 100vw;
+    height: 83vh;
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding: 0, 6em;
+        padding-top: 0.4em;
+        font-size: 3em;
+        letter-spacing: 2px;
+        color: white;
+    }
+    .title-border{
+        border-bottom: rgb(186, 186, 186) 1px solid;
+        width: 30%;
+        margin: auto;
+    }
+    h2{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding: 0, 3em;
+        padding-top: 0.3em;
+        font-size: 1.5em;
+        color: rgb(219, 219, 219);
+        letter-spacing: 1px;
+    }
+
+    .carousel {
+        width: 98%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin: auto;
+
+        .carousel-modifier {
+            // height: 85vh;
+            border-radius: 1em;
+
+            img {
+                height: 68vh;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// scroll 
+.scroll-down-container {
+    background-color: #6b8cce;
+    border-radius: 1em;
+    width: 60vw;
+    padding: 1em;
+    margin: auto;
+    margin-top: 0.5em;
+    height: 5vh;
+    // .scroll-button{
+    //     border-bottom: solid black 2px;
+    //     border-right: solid black 2px;
+    //     transform: rotate(45deg);
+    // }
+}
+
+.index-info {
+    width: 100vw;
+
+    .staff-bernabe {
+        width: 90%;
+        height: 45vh;
+        margin: auto;
+        margin-top: 1em;
+        border-radius: 0.5em;
+        background-color: #cea053;
+
+        h2 {
+            text-align: center;
+            margin: 0.5em;
+        }
+
+        .photo-text-staff {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            height: 90%;
+
+            img {
+                width: 50%;
+                height: 90%;
+                border-radius: 0.8em;
+                margin: 0.2em;
+                object-fit: cover;
+            }
+
+            p {
+                width: 40%;
+                height: 100%;
+                font-size: 1.2em;
+                text-align: justify;
+            }
+        }
+    }
+
+    .factory-bernabe {
+        width: 90%;
+        height: 45vh;
+        margin: auto;
+        margin-top: 1em;
+        border-radius: 0.5em;
+        background-color: #cea053;
+
+        h3 {
+            text-align: center;
+            margin: 0.5em;
+        }
+
+        .photo-text-factory {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            height: 90%;
+
+            img {
+                width: 50%;
+                height: 90%;
+                border-radius: 0.8em;
+                margin: 0.2em;
+                object-fit: cover;
+            }
+
+            p {
+                width: 40%;
+                height: 100%;
+                font-size: 1.2em;
+                text-align: justify;
+            }
+        }
+    }
+    .beertruck-bernabe {
+        width: 90%;
+        height: 45vh;
+        margin: auto;
+        margin-top: 1em;
+        border-radius: 0.5em;
+        background-color: #cea053;
+
+        h4 {
+            text-align: center;
+            margin: 0.5em;
+        }
+
+        .photo-text-beertruck  {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            height: 90%;
+
+            img {
+                width: 50%;
+                height: 90%;
+                border-radius: 0.8em;
+                margin: 0.2em;
+                object-fit: cover;
+            }
+
+            p {
+                width: 40%;
+                height: 100%;
+                font-size: 1.2em;
+                text-align: justify;
+            }
+        }
+    }
+
+}
