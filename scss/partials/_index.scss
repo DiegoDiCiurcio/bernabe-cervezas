@@ -1,12 +1,13 @@
 body {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    background-image: linear-gradient(to top, #0c3483 0%, #3f96b3 100%);
+    width: 100vw;
+    background-image: linear-gradient(to top, #3367d1 0%, #3f96b3 100%);
+    scroll-behavior: smooth;
 }
 
 .carousel-index {
     width: 100vw;
     height: 83vh;
+
     h1 {
         font-family: 'Poppins', sans-serif;
         text-align: center;
@@ -16,12 +17,14 @@ body {
         letter-spacing: 2px;
         color: white;
     }
-    .title-border{
+
+    .title-border {
         border-bottom: rgb(186, 186, 186) 1px solid;
         width: 30%;
         margin: auto;
     }
-    h2{
+
+    h2 {
         font-family: 'Poppins', sans-serif;
         text-align: center;
         padding: 0, 3em;
@@ -51,20 +54,56 @@ body {
 
 // scroll 
 .scroll-down-container {
-    background-color: #6b8cce;
-    border-radius: 1em;
-    width: 60vw;
+    position: relative;
+    width: 100vw;
     padding: 1em;
-    margin: auto;
-    margin-top: 0.5em;
     height: 5vh;
-    // .scroll-button{
-    //     border-bottom: solid black 2px;
-    //     border-right: solid black 2px;
-    //     transform: rotate(45deg);
-    // }
-}
+    margin-bottom: 5em;
+    margin-top: 1em;
 
+    a {
+        cursor: pointer;
+
+        .scroll-button {
+            height: 2.5em;
+            width: 100vw;
+            position: absolute;
+            border-radius: 1em;
+            &::before{
+
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                left: 50%;
+                border-bottom: #cea053 4px solid;
+                border-right: #cea053 4px solid;
+                transform: translate(-50%, -50%) rotate(45deg);
+                height: 2.5em;
+                width: 2.5em;
+                animation: scroll-down ease-in-out infinite 1.5s;
+            }
+            &::after{
+                top: 0%;
+            }
+            @keyframes scroll-down{
+                0% {
+                    opacity: 0;
+                }
+                30%{
+                    opacity: 1;
+                }
+                60%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                    top: 110%;
+                }
+            }
+        }
+    }
+}
 .index-info {
     width: 100vw;
 
@@ -76,9 +115,13 @@ body {
         border-radius: 0.5em;
         background-color: #cea053;
 
-        h2 {
+        h3 {
             text-align: center;
             margin: 0.5em;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            color: rgb(77, 77, 77);
+            letter-spacing: 1px;
         }
 
         .photo-text-staff {
@@ -112,9 +155,13 @@ body {
         border-radius: 0.5em;
         background-color: #cea053;
 
-        h3 {
+        h4 {
             text-align: center;
             margin: 0.5em;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            color: rgb(77, 77, 77);
+            letter-spacing: 1px;
         }
 
         .photo-text-factory {
@@ -139,6 +186,7 @@ body {
             }
         }
     }
+
     .beertruck-bernabe {
         width: 90%;
         height: 45vh;
@@ -147,12 +195,16 @@ body {
         border-radius: 0.5em;
         background-color: #cea053;
 
-        h4 {
+        h5 {
             text-align: center;
             margin: 0.5em;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            color: rgb(77, 77, 77);
+            letter-spacing: 1px;
         }
 
-        .photo-text-beertruck  {
+        .photo-text-beertruck {
             display: flex;
             flex-flow: row wrap;
             justify-content: space-around;
@@ -171,6 +223,9 @@ body {
                 height: 100%;
                 font-size: 1.2em;
                 text-align: justify;
+            }
+            a{
+                
             }
         }
     }

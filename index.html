@@ -14,27 +14,34 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,600&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <!-- link libreria JS Scroll  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- link animatecss  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Bernabe</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- header  -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="assets/berna.svg" class="logo-header" alt="logo-bernabe"></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/berna.svg" class="logo-header"
+                        alt="logo-bernabe"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="pages/about.html">About Us</a>
-                        <a class="nav-link" href="pages/beers.html">Our Beers</a>
-                        <a class="nav-link" href="pages/contact.html">Contact</a>
+                <div class="collapse navbar-collapse nav-bar-modifier" id="navbarNavAltMarkup">
+                    <div class="navbar-nav nav-links">
+                        <a aria-current="page" href="index.html">Home</a>
+                        <a href="pages/about.html">About Us</a>
+                        <a href="pages/beers.html">Our Beers</a>
+                    </div>
+                    <div class="contact-navbar">
+                        <a href="pages/contact.html">Contact</a>
                     </div>
                 </div>
             </div>
@@ -43,9 +50,9 @@
     <main>
         <!-- carousel  -->
         <section class="carousel-index">
-            <h1>BERNABE</h1>
+            <h1 class="animate__animated animate__fadeIn animate__slow">BERNABE</h1>
             <div class="title-border"></div>
-            <h2>AMOR Y PASION CERVECERA</h2>
+            <h2 class="animate__animated animate__fadeIn animate__slower">AMOR Y PASION CERVECERA</h2>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner carousel-modifier">
                     <div class="carousel-item active">
@@ -61,18 +68,17 @@
             </div>
         </section>
         <!-- scroll down  -->
-        <section class="scroll-down-container" id="sec-2">
-            <div class="scroll-button">
-                <span></span>
-                <span></span>
-                <span></span>
+        <section class="scroll-down-container" id="sec-1">
+            <a href="#sec-2">
+                <div class="scroll-button"><span></span></div>
+            </a>
             </div>
         </section>
         <section class="index-info" id="sec-2">
             <!-- staff  -->
             <div class="staff-bernabe">
-                <h2>Our Staff</h2>
-                <div class="photo-text-staff">
+                <h3>OUR STAFF</h3>
+                <div class="photo-text-staff" data-aos="zoom-in-up">
                     <img src="assets/staff.jpg" alt="bernabe-staff">
                     <p class="staff-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, accusamus, quas
                         aperiam minus maiores corrupti ipsa voluptas possimus fugiat placeat expedita beatae delectus
@@ -83,8 +89,8 @@
                 </div>
             </div>
             <!-- fabric  -->
-            <div class="factory-bernabe">
-                <h3>WHERE THE MAGIC TAKES PLACE</h3>
+            <div class="factory-bernabe" data-aos="zoom-in-up">
+                <h4>WHERE THE MAGIC TAKES PLACE</h4>
                 <div class="photo-text-factory">
                     <img src="assets/fabric.jpg" alt="fabric-bernabe-beer">
                     <p class="fabric-text">
@@ -98,8 +104,8 @@
                 </div>
             </div>
             <!-- beertruck  -->
-            <div class="beertruck-bernabe">
-                <h4>BEERTRUCK</h4>
+            <div class="beertruck-bernabe" data-aos="zoom-in-up">
+                <h5>BEERTRUCK</h5>
                 <div class="photo-text-beertruck">
                     <img src="assets/truck.jpg" alt="bernabe-beertruck">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque unde iure aliquam delectus quasi
@@ -109,6 +115,7 @@
                         sapiente iusto dolore quam vitae voluptatibus a, incidunt cumque totam et aliquam mollitia
                         aperiam aut maiores dolores quae iure voluptate fuga dignissimos placeat sunt? Animi assumenda
                         beatae laborum. Facilis.</p>
+                        <a href="pages/about.html">Conoce mas</a>
                 </div>
             </div>
         </section>
@@ -132,6 +139,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <!-- script Scroll animated JS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

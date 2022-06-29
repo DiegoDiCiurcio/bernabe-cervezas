@@ -1,6 +1,36 @@
 header{
     width: 100vw;
+    border-bottom: 1px solid darkgray;
 .logo-header{
     width: 4em;
+}
+.nav-bar-modifier{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.nav-links{
+    a{
+    text-decoration: none;
+    align-self: center;
+    color: #cea053;
+    font-size: 2em;
+    &:hover{
+        color: black;
+    }
+    padding-left: 2em;
+}
+}
+.contact-navbar{
+    a{
+        text-decoration: none;
+        align-self: center;
+        color: #cea053;
+        font-size: 2em;
+        &:hover{
+            color: black;
+        }
+        padding-right: 2em;
+}
 }
 }
