@@ -9,6 +9,7 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!-- link boxicons: -->
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
         <title>Document</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
@@ -26,7 +27,7 @@
                     </button>
                     <div class="collapse navbar-collapse nav-bar-modifier" id="navbarNavAltMarkup">
                         <div class="navbar-nav nav-links">
-                            <a aria-current="page" href="../inde">Home</a>
+                            <a aria-current="page" href="../index.html">Home</a>
                             <a href="about.html">About Us</a>
                             <a href="beers.html">Our Beers</a>
                         </div>
@@ -39,28 +40,28 @@
         </header>
         <main>
             <section class="contact-form">
-                <h1>CONTACTANOS</h1>
-                <div class="contact-data">
-                    <form action="name"></form>
-                    <label for="name">Nombre</label>
-                    <input type="text" name="Name" id="">
-                    <label for="lastname">Apellido</label>
-                    <input type="text" name="Lastname" id="">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="">
-                    <textarea name="text" id="" cols="30" rows="10" placeholder="Ingrese su consulta aqui:"></textarea>
-                </div>
+                <form   action="https://formspree.io/f/mayvzgek"
+                method="POST"w>
+                    <div class="form-container">
+                        <h1>CONTACTANOS</h1>
+                        <input type="text" class="form-input" placeholder="Nombre" name="name">
+                        <input type="email" class="form-input" placeholder="Email"
+                        name="email">
+                        <textarea class="form-input-textarea" placeholder="Mensaje" name="message"></textarea>
+                        <input type="submit" value="Enviar" class="form-cta" >
+                    </div>
+                </form>
             </section>
         </main>
 
         <footer>
             <section class="footer">
                 <div class="social-media">
-                    <a href=""><i class='bx bxl-instagram' ></i></a>
-                    <a href=""><i class='bx bxl-facebook'></i></a>
-                    <a href=""><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.instagram.com/cervezabernabe/?hl=es" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/CervezaBernabe/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
                     <!-- que esto me redirija al mapa -->
-                    <a href=""><i class='bx bxs-map-pin' ></i></a> 
+                    <a href="https://www.google.com/maps/place/Cerveza+Bernabe/@-41.1395491,-71.3194511,15z/data=!4m5!3m4!1s0x0:0x8928d48dd3666c4d!8m2!3d-41.1395491!4d-71.3106963" target="_blank"><i class='bx bxs-map-pin'></i></a>
                 </div>
             </section>
         </footer>
@@ -73,3 +74,4 @@
     crossorigin="anonymous"></script>
 </body>
 </html>
+

@@ -1,0 +1,128 @@
+.container-about-us {
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding: 0, 6em;
+        padding-top: 0.4em;
+        font-size: 4em;
+        letter-spacing: 2px;
+        color: white;
+    }
+
+    .logo-bernabe {
+        width: 11vw;
+        height: 5vh;
+        margin: auto;
+        margin-top: -.5em;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    .history {
+
+        width: 95vw;
+        border-radius: 0.8em;
+        margin: auto;
+        margin-top: 5em;
+        display: grid;
+        grid-template-columns: 45vw, 55vw;
+        grid-template-areas: "title title"
+            "carousel intro";
+            box-shadow: 5px;
+
+        .background-h2 {
+            width: 45vw;
+            height: 4em;
+            margin-left: 2vw;
+            background-color: rgb(218, 140, 76);
+            border-radius: 0.8em;
+            margin-bottom: 1.5em;
+            align-items: center;
+
+
+            h2 {
+                margin-left: 4vw;
+                color: black;
+                font-size: 2.8em;
+
+            }
+        }
+
+        .text-history{
+            grid-area: intro;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: whitesmoke;
+            font-size: 1.5em;
+        }
+        .img-history{
+            grid-area: carousel;
+            width: 45vw;
+            height: 55vh;
+            margin-left: 2.5vw;
+
+            img{
+                width: 95%;
+                height: 80%;
+                border-radius: 1em;
+            }
+        }
+
+
+    }
+    .future-proyects {
+
+        width: 95vw;
+        border-radius: 0.8em;
+        margin: auto;
+        margin-top: 5em;
+        display: grid;
+        grid-template-columns: 45vw, 55vw;
+        grid-template-areas: "title title"
+            "intro carousel ";
+            box-shadow: 5px;
+
+        .background-h3 {
+            width: 45vw;
+            height: 4em;
+            margin-left: 50vw;
+            background-color: rgb(218, 140, 76);
+            border-radius: 0.8em;
+            margin-bottom: 1.5em;
+            align-items: center;
+
+
+            h3 {
+                margin-left: 4vw;
+                color: black;
+                font-size: 2.8em;
+
+            }
+        }
+
+        .text-proyects{
+            grid-area: intro;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: whitesmoke;
+            font-size: 1.5em;
+        }
+        .img-{
+            grid-area: carousel;
+            width: 45vw;
+            height: 55vh;
+            margin-left: 2.5vw;
+
+            img{
+                width: 95%;
+                height: 80%;
+                border-radius: 1em;
+            }
+        }
+
+
+    }
+}
